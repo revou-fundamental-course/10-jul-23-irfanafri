@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple BMI Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="split left">
+        <div class="container">
+            <h3>How to use: simply slides the button left and right according to your body height and weight.</h3>
+            <h1>Simple BMI Calculator</h1>
+            <div class="display">
+                <p id="result">20.0</p>
+                <p id="category">Normal</p>
+            </div>
+            <div class="row">
+                <input type="range" min="100" max="250" value="100" id="height" oninput="calculate()">
+                <span id="height-value">100 cm</span>
+            </div>
+            <div class="row">
+                <input type="range" min="20" max="200" value="20" id="weight" oninput="calculate()">
+                <span id="weight-value">20 kg</span>
+            </div>
+        </div>
+    </div>
+    <div class="split right">
+        <h2>BMI Chart</h2>
+        <div class="underweight">
+            <h3>Underweight</h3>
+            <p>Less than 18.5</p>
+        </div>
+        <div class="normal">
+            <h3>Normal</h3>
+            <p>18.5 to 24.9</p>
+        </div>
+        <div class="overweight">
+            <h3>Overweight</h3>
+            <p>25 to 29.9</p>
+        </div>
+        <div class="obese">
+            <h3>Obese</h3>
+            <p>Over 30</p>
+        </div>
+        <div class="text">
+        <h2>About BMI</h2>
+        <p>BMI (Body Mass Index) is a measure for indicating nutrional status in adults.
+            The value is derived from the mass (weight) and height of a person.
+            It is defined as the body mass divided by the square of the body height, and is expressed in units of kg/m2,
+            resulting from mass in kilograms (kg) and height in metre (m).</p>
+        <p></p>
+        </div>
+    </div>
+    <div class="footer">
+        <p>This is an assignment and mini coding project required in order to obtain a certificate of completion from RevoU Fundamental Course: Software Engineering.</p>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
